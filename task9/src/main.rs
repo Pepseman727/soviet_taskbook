@@ -11,9 +11,8 @@ fn main() {
         .read_line(&mut resist)
         .expect("Enter value");
 
-    let resist: Vec<&str> = resist.trim().split(' ').collect();
-    let resist: Vec<f64> = resist
-                            .iter()
+    let resist: Vec<f64> = resist.trim()
+                            .split(' ')
                             .map(|value| value.to_string().parse::<f64>().expect("Enter a number"))
                             .collect();
     if let [r1, r2, r3] = resist.as_slice() {
