@@ -1,5 +1,4 @@
 use std::io;
-
 fn main() {
     let mut resist = String::new();
     //Рассчётная формула 1/R = 1/R1 + 1/R2 + 1/R3
